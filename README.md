@@ -1,2 +1,4 @@
-# learn_python_basic
-learn python basic
+# learn python(basic)
+This repository created for learning python basic 
+
+* [01](01/)

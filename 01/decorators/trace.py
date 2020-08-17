@@ -8,7 +8,7 @@ def print_indent(indent, times):
     print(end=' ')
 
 
-def decorator_factory(indent):
+def trace_decorator(indent):
     def decorator(function):
         @wraps(function)
         def wrapper(*args, **kwargs):
@@ -30,7 +30,7 @@ def decorator_factory(indent):
     return decorator
 
 
-@decorator_factory("___")
+@trace_decorator("___")
 def fib(n):
     cur = 1
     if n <= 1:

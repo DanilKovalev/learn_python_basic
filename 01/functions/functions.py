@@ -2,7 +2,7 @@ import time
 from enum import Enum
 
 
-def perfomance_decorator(func):
+def performance_decorator(func):
     def _wrapper(*args, **kwargs):
         ts = time.time()
         result = func(*args, **kwargs)

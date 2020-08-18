@@ -13,7 +13,7 @@ def performance_decorator(func):
     return _wrapper
 
 
-@perfomance_decorator
+@performance_decorator
 def exponentiation(nums, times=2):
     result = list()
     for num in nums:
@@ -48,7 +48,7 @@ class FilterType(Enum):
     SIMPLE = filter_simple
 
 
-@perfomance_decorator
+@performance_decorator
 def list_filter(nums, filter_type):
     return list(filter(filter_type, nums))
 

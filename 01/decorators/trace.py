@@ -32,10 +32,12 @@ def trace_decorator(indent):
 
 @trace_decorator("___")
 def fib(n):
-    cur = 1
-    if n <= 1:
+    if n == 0:
+        return 0
+    elif n == 1:
         return 1
-    return fib(n - 1) + fib(n - 2)
+    else:
+        return fib(n - 1) + fib(n - 2)
 
 
 fib(3)

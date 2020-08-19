@@ -17,7 +17,7 @@ def performance_decorator(func):
 def exponentiation(nums, times=2):
     result = list()
     for num in nums:
-        result.append(num ** times)
+        result.append(pow(num, times))
 
     return result
 
